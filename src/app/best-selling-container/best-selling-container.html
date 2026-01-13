@@ -1,0 +1,27 @@
+<div class="best-selling-container">
+    <div>
+        <h2>Best Selling Products</h2>
+    </div>
+
+    <div class="carousel">
+
+    <!-- Left arrow -->
+    <button class="arrow left" (click)="prevProduct()">‹</button>
+
+    <!-- Product display -->
+    <div class="product">
+      <img 
+        [src]="products[currentIndex()].image" 
+        alt="Product image"
+      />
+
+      <p class="price">
+        ₦{{ products[currentIndex()].price }}
+      </p>
+    </div>
+
+    <!-- Right arrow -->
+    <button class="arrow right" (click)="nextProduct()">›</button>
+
+  </div>
+</div>

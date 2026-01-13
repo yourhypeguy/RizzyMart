@@ -1,0 +1,87 @@
+.nav-bar-container{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+   
+}
+
+.nav-bar-parent{
+    width: 100%;
+    height: 7.5em;
+    background: #ffffff;
+    padding-top: 0.5em;
+}
+
+.nav-search-bar-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.rizzyMart_logo{
+    width: 50%;
+    height: auto;
+}
+
+.search-icon{
+    display: none;
+    width: 90%;
+    height: auto;
+    position: relative;
+    
+}
+
+.recipt-logo{
+    width: 50%;
+    height: auto;
+}
+
+.receipt-logo-parent{
+    width: 40px;
+    height: 2.2em;
+    background-color: #ffffff;
+    display: flex;
+    border: 0px solid #a7a7a7 ;
+    box-shadow: 0px 0px 2px 1px #a5a5a5;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 2em;
+}
+
+.search-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;    
+    align-items: center;    
+   
+    
+}
+
+.search-input{
+   width: 300px;
+    height: 2em;
+    border-radius: 5px 0px 0px 5px;
+    border: 0.5px solid #5c5c5c;
+   
+}
+
+.submit-button{
+    width: 60px;
+    color: white;
+    background-color: #FF7A00;
+    height: 2em;
+    border-radius:0px 5px 5px 0px;
+    border: 0.5px solid #5c5c5c;
+}
+
+.search-text{
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 700;
+}

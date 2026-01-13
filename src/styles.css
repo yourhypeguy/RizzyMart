@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #0f0f0f; /* desktop background */
+}
+
+app-root {
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  max-width: 1024px;   /* tablet max width */
+  margin: 0 auto;      /* center on desktop */
+  background: #FFF5E6;
+}
+
+
+
