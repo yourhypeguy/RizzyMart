@@ -10,7 +10,7 @@
 .greeting{
     width: 95%;
     height: 14vh;
-    background-image: url('assets/rizzy-banner-8k.png');
+    background-image: url('/assets/rizzy-banner-8k.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
