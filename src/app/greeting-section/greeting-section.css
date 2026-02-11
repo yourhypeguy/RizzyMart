@@ -10,12 +10,12 @@
 .greeting{
     width: 95%;
     height: 14vh;
+     aspect-ratio: 16/6;
     background-image: url('/assets/rizzy-banner-8k.png');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.06);
-
     margin: 2em auto;
     border-radius: 7px;
 }
@@ -41,7 +41,9 @@
     flex-direction: row;
     justify-content: space-around;
     position: relative;
-    right: 1em;
+   
+    padding: 0px 3em;
+  
     
 
 
@@ -50,7 +52,7 @@
 .category-list li{
     text-decoration: none;
     list-style: none;
-    width: 100px;
+    width: 70px;
     height: 2.5em;
     margin: 3px;
     border: 0.5px solid #a5a5a5;
@@ -58,7 +60,7 @@
     text-align: center;
    border-radius: 5px;
     color: white;
-    font-size: 12px;
+    font-size: 10px;
   box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.06);
 
     background: linear-gradient(
