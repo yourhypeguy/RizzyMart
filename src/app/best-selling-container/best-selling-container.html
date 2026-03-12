@@ -16,18 +16,20 @@
       />
      </div>
      
-
-     <p class="name">
-        {{ products[currentIndex()].name }}
-      </p>
+    <div>
+        <p class="price">
+          {{ products[currentIndex()].price | currency: 'NGN': 'symbol' }}
+        </p>
+    </div>
+     
 
       
     <div class="product-arrow-con">
       <!-- Left arrow -->
     <button class="arrow left, left-arrow" (click)="prevProduct()">‹</button>
 
-      <p class="price">
-        {{ products[currentIndex()].price | currency: 'NGN': 'symbol' }}
+      <p class="name">
+        {{ products[currentIndex()].name }}
       </p>
 
        <!-- Right arrow -->
