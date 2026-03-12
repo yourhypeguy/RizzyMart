@@ -16,10 +16,16 @@
       />
      </div>
      
-    <div>
-        <p class="price">
+    <div class="product-price-cart">
+        <div class="price-section">
+          <p class="price">
           {{ products[currentIndex()].price | currency: 'NGN': 'symbol' }}
         </p>
+        </div>
+
+        <div class="ATR-section">
+          <button class="ATR-btn">Add to Cart <span style="font-weight: bolder;">+</span></button>
+        </div>
     </div>
      
 
