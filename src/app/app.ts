@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { NavBar } from './nav-bar/nav-bar';   
 import { GreetingSection } from './greeting-section/greeting-section';
 import { BestSellingContainer } from './best-selling-container/best-selling-container';
+import { FoodHomePage } from './food-home-page/food-home-page';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavBar, GreetingSection, BestSellingContainer],
+  imports: [RouterOutlet, NavBar, GreetingSection, BestSellingContainer, FoodHomePage],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
