@@ -11,9 +11,9 @@ import { PLATFORM_ID } from '@angular/core';
 export class BestSellingContainer implements OnInit, OnDestroy {
   //list of products
 products = [
-  {image: 'assets/25kg_kingsOil.png', name: 'Kings-Oil "25L"', price: 70000},
-  {image: 'assets/royal-stalion-rice.png', name: 'Royal-Stallion Rice "25kg"', price: 40000},
-  {image: 'assets/rose-carla-tissue-single.png', name: 'Rose Carla Tissue "Single"', price: 1000},
+  {image: 'assets/25kg_kingsOil.png', name: ' Kings-Oil "25L"', price: 70000},
+  {image: 'assets/royal-stalion-rice.png', name: ' Royal-Stallion Rice "25kg"', price: 40000},
+  {image: 'assets/rose-carla-tissue-single.png', name: ' Rose Carla Tissue "Single"', price: 1000},
 ];
 
 //track which product is showing
