@@ -1,0 +1,79 @@
+.food-item-con{
+    width: 200px;
+    height: 20em;
+    background: linear-gradient(90deg, #ffa149 0%, #FF7A00  100%);
+    border-radius: 5px;
+    box-shadow: 0 4px  12px 5px rgba(0, 0, 0, 0.06);
+}
+
+.img{
+    width: 200px;
+    border-radius: 5px;
+}
+
+.name-price{
+    padding: 7px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  
+}
+.name{
+    width: 45%;
+    height: 1.5em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.06);
+}
+
+.name p{
+    color: rgb(31, 31, 31);
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;  
+}
+
+.price{
+    width: 45%;
+    height: 1.5em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.06);
+}
+
+.price p{
+    color: rgb(31, 31, 31);
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;  
+}
+
+.ATR-btn{
+    width: 55%;
+    height: 2.5em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 10px  12px 5px rgba(0, 0, 0, 0.06);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    border: 0.5px solid rgb(131, 131, 131);
+    color: rgb(31, 31, 31);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.swipe-btn{
+    width: 100%;
+    background-color: #FF7A00  ;
+    position: relative;
+    top: 13px;
+    height: 2.3em;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}

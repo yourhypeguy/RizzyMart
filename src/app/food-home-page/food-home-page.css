@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: auto;
+  height: 65vh;
+  
   
 }
 
@@ -30,6 +31,25 @@
 .foodC0N2{
     width: 97%;
     background-color: rgb(251, 247, 247);
-    height: 50vh;
     border-radius: 5px;
+    
+   
+}
+
+.foodContainer{
+  width: 100%;
+  height: 37vh;
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  scroll-behavior: smooth;
+   overflow-y: hidden; /* 🚫 disables vertical scroll */
+  flex-wrap: nowrap;  /* keeps everything in one line */
+  /* 🔥 Hide scrollbar */
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE/Edge */
+}
+.foodContainer::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
