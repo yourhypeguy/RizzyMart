@@ -22,7 +22,7 @@
 }
 
 .product {
-   width: 95%;
+   width: 90%;
   height: 45.5vh;
   background-color: orange;
   margin: 0px auto;
@@ -35,10 +35,11 @@
 }
 
 .product-img {
-  width: 50%;
+  width: 45%;
   height: 200px;
   object-fit: contain;
   border-radius: 10px;
+  
 }
 
 .price {
@@ -108,6 +109,10 @@
   background-color: white;
   height: 35vh;
   border-radius: 5px 5px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .left-arrow{

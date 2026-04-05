@@ -82,12 +82,15 @@
 
 .search-input{
    width: 300px;
-    height: 2.7em;
+    height: 2.8em;
     border-radius: 5px 0px 0px 5px;
     border: 0.5px solid #ffffff;
    box-shadow: 0 4px 12px 2px rgba(0, 0, 0, 0.06);
    padding: 0px 10px;
    font-size: 12px;
+   background: url('/assets/search-icon.png') no-repeat 10px center;
+   background-size: 23px;
+   padding: 10px 10px 10px 32px;
 }
 
 .search-input::placeholder{
