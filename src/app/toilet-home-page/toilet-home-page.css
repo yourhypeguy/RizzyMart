@@ -1,0 +1,61 @@
+.food-homePage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 45vh;
+  
+  
+}
+
+.foodCON1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em 1em 0px 1em;
+}
+
+.foodCON1 h2{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    color: rgb(73, 73, 73);
+   
+}
+
+.viewAll{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(172, 84, 2);
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.viewAllSign{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.foodC0N2{
+    width: 97%;
+   
+    border-radius: 5px;
+    height: 21sem; 
+}
+
+.foodContainer{
+  width: 100%;
+  height: 45vh;
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  scroll-behavior: smooth;
+   overflow-y: hidden; /* 🚫 disables vertical scroll */
+  flex-wrap: nowrap;  /* keeps everything in one line */
+  /* 🔥 Hide scrollbar */
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE/Edge */
+}
+.foodContainer::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}

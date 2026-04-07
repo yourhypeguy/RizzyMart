@@ -1,0 +1,45 @@
+.h1-doc {
+    font-size: 18px;
+    color: #000000;
+    text-align: left;
+    
+}
+
+.h2-doc {
+    font-size: 15px;
+    color: #090909;
+    text-align: justify;
+}
+
+.h4-doc {
+    font-size: 12px;
+    color: #000000;
+    text-align: justify;
+}
+
+.h5-doc {
+    font-size: 13px;
+    color: #000000;
+    text-align: center;
+}
+
+.p-doc {
+    font-size: 12px;
+    color: #070707;
+    text-align: justify;
+}
+
+.doc-con {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff5e8;
+    border-radius: 5px;
+}
+
+.doc-con ul  {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.doc-con ul li {
+   font-size: 12px;
+}
