@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FoodItems } from '../food-items/food-items'; 
+import { FoodItems } from '../../component/food-items/food-items'; 
 
 
 @Component({

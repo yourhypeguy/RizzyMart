@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { FoodItems } from '../food-items/food-items';
+import { FoodItems } from '../../component/food-items/food-items';
 
 @Component({
   selector: 'app-kids',
