@@ -1,0 +1,123 @@
+.footer-container {
+    width: 100%;
+  background-color: #000a14;
+  padding: 20px;
+  color: azure;
+}
+
+.rizzyMart_logo_footer{
+    width: 100px;
+}
+
+.logo-chat-con{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.logo-chat-con h5{
+  font-size: 13px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.whatsapp-logo{
+  width: 15px;
+ 
+}
+
+.logo-con{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links{
+  display: flex;
+  justify-content: center;
+ gap: 15px;
+  align-items: center;
+  font-size: 12px;
+  text-align: center;
+
+}
+
+.footer-links2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  font-size: 11px;
+  text-align: center;
+  
+}
+
+.footer-links3{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  font-size: 11px;
+  text-align: center;
+}
+
+.numbers{
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+
+}
+
+.footer-logo-con{
+  width: 15%;
+  display: flex;
+  gap: 10px;
+ position: relative;
+ bottom: 7px;
+
+}
+.footer-logo{
+  width: 25px;
+}
+
+.about-us{
+  width: 100%;
+  position: relative;
+  bottom: 10px;
+  margin: 0px auto;
+}
+
+.about-us h2{
+  font-size: 14px;
+  text-align: left;
+}
+
+.about-us p{
+  font-size: 10px;
+  text-align: justify;
+  position: relative;
+  bottom: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.copyright{
+  width: 100%;
+}
+
+.copyright p{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.footer-links3 p{
+position: relative;
+left: 17px;
+}

@@ -3,7 +3,7 @@
     height: 15em;
     background: linear-gradient(90deg, #ffa149 0%, #FF7A00  100%);
     border-radius: 5px;
-    box-shadow: 0 4px  12px 5px rgba(0, 0, 0, 0.06);
+    box-shadow: 1px 1.5px 4px 0.5px rgba(28, 28, 28, 0.4);
 }
 
 .img{
