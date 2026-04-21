@@ -14,5 +14,15 @@ app-root {
   background: #fffaf3;
 }
 
+:root {
+  --orange-bg: 
+    radial-gradient(circle at center,
+      rgba(255,255,255,0.85) 0%,
+      rgba(255,255,255,0.45) 18%,
+      rgba(255,255,255,0.2) 35%,
+      rgba(255,255,255,0) 70%
+    ),
+    linear-gradient(180deg, #F57C13 0%, #F57C13 100%);
+}
 
 

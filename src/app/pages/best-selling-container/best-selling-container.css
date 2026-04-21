@@ -24,9 +24,8 @@
 .product {
    width: 90%;
   height: 45.5vh;
-  background-color: orange;
   margin: 0px auto;
-  background: linear-gradient(90deg,  #FF7A00 0%, #ffa149 100%);
+  background: var(--orange-bg);
   text-align: center;
   border-radius: 5px;
   box-shadow: 1px 2px 3.5px 1px rgba(53, 53, 53, 0.4);

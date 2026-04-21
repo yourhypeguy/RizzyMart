@@ -71,11 +71,7 @@
     font-size: 11px;
   box-shadow: 0.6px 0.6px 2px 1px rgba(115, 115, 115, 0.4);
 
-    background: linear-gradient(
-  to right,
-  #FF7A00,
-  #FF7A00
-);
+    background:linear-gradient(180deg, #F57C13 0%, #F57C13 100%);
     padding: 7px;
     font-weight: 600;
     display: flex;
