@@ -10,7 +10,7 @@
 
 .nav-bar-parent{
     width: 100%;
-    height: 7.5em;
+    height: 8.5em;
     background: #ffffff;
     padding-top: 0.5em;
     /* position: sticky;
@@ -27,17 +27,18 @@
   transition: box-shadow 0.3s ease;
 }
 .navbar.scrolled {
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 40px 30px rgba(0, 0, 0, 0.12);
 }
 
 .nav-search-bar-container{
     display: flex;
     flex-direction: row;
     width: 100%;
+
 }
 
 .rizzyMart_logo{
-    width: 38%;
+    width: 40%;
     height: auto;
 }
 
@@ -65,8 +66,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    left: 2em;
+    position: absolute;
+    right: 1em;
+    top: 2em;
     border-radius: 5px;
 }
 
@@ -89,7 +91,7 @@
    padding: 0px 10px;
    font-size: 16px;
    color: rgb(24, 24, 24);
-   background: url('/assets/search-icon.png') no-repeat 10px center;
+   background: url('./assets/search-icon.png') no-repeat 10px center;
    background-size: 23px;
    padding: 10px 10px 10px 45px;
 }

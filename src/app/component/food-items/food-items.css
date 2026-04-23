@@ -1,7 +1,7 @@
 .food-item-con{
     width: 175px;
     height: 15em;
-    background: linear-gradient(90deg, #ffa149 0%, #FF7A00  100%);
+    background: var(--orange-bg);
     border-radius: 5px;
     box-shadow: 1px 1.5px 4px 0.5px rgba(28, 28, 28, 0.4);
 }

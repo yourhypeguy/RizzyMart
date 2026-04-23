@@ -1,5 +1,5 @@
 import { Component  } from '@angular/core';
-import { HostListener } from '@angular/core';
+
 
 @Component({
   selector: 'app-moving-text',
@@ -8,5 +8,7 @@ import { HostListener } from '@angular/core';
   styleUrl: './moving-text.css',
 })
 export class MovingText {
+  
+  
 
 }
