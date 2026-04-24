@@ -1,6 +1,6 @@
 <div class="food-mainPage-container">
     <div class="food-header">
-        <img class="back-btn" src="../../../assets/backBTN.png" alt="back-btn">
+        <img class="back-btn" src="assets/backBTN.png" alt="back-btn">
 
         <h1>Food</h1>
     </div>
@@ -8,13 +8,16 @@
     <div class="foodCON">
         
         <div class="food-mainPage-content" >
-            <div>
+            <div class="food-mainPage-content-header">
+    
             <ul>
                 <li>Can-Food</li>
                 <li>Food-items</li>
                 <li>Drinks</li>
                 <li>Baby-food</li>
             </ul>
+
+            
         </div>
             <app-food-items *ngFor="let i of [1,2,3,4,5,6]"></app-food-items>
         </div>
