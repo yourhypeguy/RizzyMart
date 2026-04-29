@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FoodMainPage } from './food-main-page';
 
+
 describe('FoodMainPage', () => {
   let component: FoodMainPage;
   let fixture: ComponentFixture<FoodMainPage>;
