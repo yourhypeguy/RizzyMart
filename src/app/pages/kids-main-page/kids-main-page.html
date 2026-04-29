@@ -1,0 +1,38 @@
+<div class="food-mainPage-container">
+    <div class="food-header">
+        <img class="back-btn" (click)="goBack()"  src="./assets/back-btn.png" alt="back-btn">
+
+        <h1>For kids</h1>
+    </div>
+
+    <div class="foodCON">
+        
+        <div class="food-mainPage-content" >
+
+            <div class="top-section">
+
+               <div class="featured-product">
+                 <app-food-items></app-food-items>
+               </div>
+
+
+                <div class="food-mainPage-content-header">
+                    <ul>
+                        <li>Baby Food</li>
+                        <li>Kids Drinks</li>
+                        <li>Biscuits</li>
+                        <li>Diapers</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="product-grid">
+                <app-food-items *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]"></app-food-items>
+    
+            </div>
+
+    </div>
+
+</div>
+
