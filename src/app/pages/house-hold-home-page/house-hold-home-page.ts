@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FoodItems } from '../../component/food-items/food-items'; 
+import { RouterLink } from "@angular/router";
 
 
 @Component({
   selector: 'app-house-hold-home-page',
-  imports: [CommonModule, FoodItems],
+  imports: [CommonModule, FoodItems, RouterLink],
 
   templateUrl: './house-hold-home-page.html',
   styleUrl: './house-hold-home-page.css',
