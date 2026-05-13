@@ -1,10 +1,11 @@
 import { Component, signal, OnInit, OnDestroy, NgZone, Inject } from '@angular/core';
 import { CommonModule,isPlatformBrowser } from '@angular/common';  
 import { PLATFORM_ID } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-best-selling-container',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './best-selling-container.html',
   styleUrl: './best-selling-container.css',
 })

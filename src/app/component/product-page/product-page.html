@@ -1,0 +1,86 @@
+<div class="product-page">
+    <div class="back-btn-background">
+        <img class="back-btn" (click)="goBack()"  src="./assets/back-btn.png" alt="back-btn"> 
+    </div>
+
+    <div class="product-listing">
+        <div class="img-con">
+
+        <div class="img-carousel">
+
+                <div class="img">
+                    <img
+                    class="img"
+                    [src]="images[currentIndex()]"
+                    alt=""
+                    >
+                </div>
+
+            <div class="dots">
+
+                @for(dot of images; track $index){
+
+                <span
+                    class="dot"
+                    [class.active]="currentIndex() === $index"
+                    (click)="goToSlide($index)"
+                >
+                </span>
+
+                }
+
+            </div>
+
+       </div>
+        </div>
+
+        <div class="product-price">
+            <h2>KINGS OIL 25L</h2>
+
+            <P class="product-ID">Product ID: 0000</P>
+
+            <h3>N57,000.00</h3>
+
+            <P class="product-des">lore ipsum dolor sit amet, consectetur adipiscing elit.</P>
+        </div>
+
+
+    </div>
+
+    <div class="item-section">
+        <div class="item-section-header">
+          <p>Quantity</p>
+          <div class="item-section-btn">
+            
+             <div class="quantity-section">
+                <button class="quantity-btn">-</button>
+                <span class="quantity">5</span>
+                <button class="quantity-btn">+</button>
+            </div> 
+            
+            <div class="add-to-cart-btn-con">
+                <button class="add-to-cart-btn"><span><img src="./assets/" alt=""></span> Add to Cart</button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>About Product</h3>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
