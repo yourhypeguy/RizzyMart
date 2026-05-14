@@ -228,16 +228,33 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position:relative;
+    top: 8px;
  
 }
 
 .service-offer li{
     list-style: none;
-   
+   background-color: #F57C13;
+    width: 47%;
+    display: flex;
+    height: 3em;
+    justify-content: center;
+    align-items: center; 
+    font-size: 10px;  
+
 }
 
 .carton-btn{
-    width: 30%;
+    width: 55%;
     height: 3em;
     background-color: #FF7A00 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 0.5px solid #fdfdfd;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px 1px rgba(115, 115, 115, 0.4);
 }
