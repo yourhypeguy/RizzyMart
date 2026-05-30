@@ -22,10 +22,10 @@ export class ProductPage implements OnInit, OnDestroy {
   }
 
   images = [
-    '/assets/25kg_kingsOil.png',
-    '/assets/25kg_kingsOil.png',
-    '/assets/25kg_kingsOil.png',
-    '/assets/25kg_kingsOil.png',
+    './assets/25kg_kingsOil.png',
+    './assets/25kg_kingsOil.png',
+    './assets/25kg_kingsOil.png',
+    './assets/25kg_kingsOil.png',
   ];
 
   currentIndex = signal(0);
