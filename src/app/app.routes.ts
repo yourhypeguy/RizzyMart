@@ -6,6 +6,7 @@ import { KidsMainPage } from './pages/kids-main-page/kids-main-page';
 import { ToiletMainPage } from './pages/toilet-main-page/toilet-main-page';
 import { ProductPage } from './component/product-page/product-page';
 
+
 export const routes: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
     {path: 'home', component: Homepage},
@@ -13,7 +14,8 @@ export const routes: Routes = [
     {path: 'house-hold-main-page', component: HouseHoldMainPage},
     {path: 'kids-main-page', component: KidsMainPage},
     {path: 'toilet-main-page', component: ToiletMainPage},
-    {path: 'product-page', component: ProductPage}
+    {path: 'product-page', component: ProductPage},
+    
     
     
 ];

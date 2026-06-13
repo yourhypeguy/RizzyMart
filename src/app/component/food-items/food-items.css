@@ -1,7 +1,7 @@
 .food-item-con{
     width: 175px;
     height: 15em;
-    background: var(--orange-bg);
+    background: #EE830C ;
     border-radius: 5px;
     box-shadow: 1px 1.5px 4px 0.5px rgba(28, 28, 28, 0.4);
 }
@@ -81,9 +81,9 @@ align-items: center;
     
 }
 
-.swipe-btn{
+/* .swipe-btn{
     width: 100%;
-    background-color: #FF7A00  ;
+    background-color: #1520fb  ;
     position: relative;
     top: 13px;
     height: 2.3em;
@@ -93,4 +93,4 @@ align-items: center;
     color: white;
     font-size: 17px;
     font-weight: 600;
-}
+} */

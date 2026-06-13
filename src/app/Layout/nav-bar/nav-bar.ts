@@ -2,13 +2,14 @@ import { Component,HostListener } from '@angular/core';
 import { MovingText } from '../moving-text/moving-text';
 import { CommonModule } from '@angular/common'; 
 import { CartItem } from '../../component/cart-item/cart-item';
+import { RouterModule } from '@angular/router'; 
 
 
 
 
 @Component({
   selector: 'app-nav-bar',
-  imports: [MovingText, CommonModule, CartItem],
+  imports: [MovingText, CommonModule, CartItem, RouterModule],
   templateUrl: './nav-bar.html',
   styleUrl: './nav-bar.css',
 })
