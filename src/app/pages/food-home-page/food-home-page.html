@@ -5,8 +5,8 @@
         <a class="viewAll" routerLink="/food-main-page">View All ></a>
     </div>
      <div class="foodContainer">
-        <div class="foodC0N2" *ngFor="let i of [1,2,3,4,5,6]">
-            <app-food-items></app-food-items>
+        <div class="foodC0N2" *ngFor="let product of products">
+          <app-food-items [product]="product"></app-food-items>
         </div>
      </div>
     
