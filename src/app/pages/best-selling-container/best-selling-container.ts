@@ -26,6 +26,7 @@ intervalId: any;
 constructor(private ngZone: NgZone, @Inject(PLATFORM_ID) private platformId: Object) {}
 
 ngOnInit() {
+  
   this.startAutoSlide();
 }
 
@@ -37,12 +38,12 @@ ngOnDestroy() {
 
 //automatically change product every 3 seconds
 startAutoSlide() {
-    this.ngZone.runOutsideAngular(() => {
-      this.intervalId = setInterval(() => {
-        this.ngZone.run(() => this.nextProduct());
-      }, 3000);
-    });
-  }
+  this.ngZone.runOutsideAngular(() => {
+    this.intervalId = setInterval(() => {
+      this.nextProduct();
+    }, 3000);
+  });
+}
 
 //move to next product
 nextProduct() {
