@@ -10,6 +10,11 @@ export class Product {
    constructor(private http: HttpClient) {}
    getProducts() {
   return this.http.get<ProductModel[]>(this.apiUrl + '?category=Food');
-
 }
+
+getProductById(id: string) {
+  return this.http.get<ProductModel>(`${this.apiUrl}/${id}`);
+}
+
+
 }

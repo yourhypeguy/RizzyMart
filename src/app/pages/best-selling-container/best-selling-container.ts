@@ -26,7 +26,6 @@ intervalId: any;
 constructor(private ngZone: NgZone, @Inject(PLATFORM_ID) private platformId: Object) {}
 
 ngOnInit() {
-  
   this.startAutoSlide();
 }
 

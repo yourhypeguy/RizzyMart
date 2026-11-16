@@ -14,7 +14,7 @@ export const routes: Routes = [
     {path: 'house-hold-main-page', component: HouseHoldMainPage},
     {path: 'kids-main-page', component: KidsMainPage},
     {path: 'toilet-main-page', component: ToiletMainPage},
-    {path: 'product-page', component: ProductPage},
+    {path: 'product-page/:id', component: ProductPage},
     
     
     

@@ -10,10 +10,10 @@
 
                 <div class="img">
                     <img
-                    class="img"
-                    [src]="images[currentIndex()]"
-                    alt=""
-                    >
+                        class="img"
+                        [src]="product ? './assets/' + product.image : ''"
+                        [alt]="product?.name || 'Product image'"
+                   >
                 </div>
 
             <div class="dots">
@@ -35,13 +35,13 @@
         </div>
 
         <div class="product-price">
-            <h2>KINGS OIL 25L</h2>
+            <h2>{{ product?.name }}</h2>
 
-            <P class="product-ID">Product ID: 0000</P>
+            <p class="product-ID">Product ID: {{ product?._id }}</p>
 
-            <h3>N57,000.00</h3>
+            <h3>₦{{ product?.price | number:'1.0-2' }}</h3>
 
-            <P class="product-des">lore ipsum dolor sit amet, consectetur adipiscing elit.</P>
+            <p class="product-des">{{ product?.description }}</p>
         </div>
 
 
@@ -53,14 +53,20 @@
           <div class="item-section-btn">
             
              <div class="quantity-section">
-                <button class="quantity-btn">-</button>
-                <span class="quantity">5</span>
-                <button class="quantity-btn">+</button>
-            </div> 
+                <button class="quantity-btn" (click)="decreaseQuantity()">-</button>
+
+                <span class="quantity">{{ quantity }}</span>
+
+                <button class="quantity-btn" (click)="increaseQuantity()">+</button>
+            </div>
             
             <div class="add-to-cart-btn-con">
-                <button class="add-to-cart-btn"><span><img class="shopping-cart-icon" src="./assets/shoppingCartIcon.png" alt=""></span> Add to Cart</button>
-
+                <button class="add-to-cart-btn" (click)="addToCart()">
+                    <span>
+                        <img class="shopping-cart-icon" src="./assets/shoppingCartIcon.png" alt="">
+                    </span>
+                    Add to Cart
+                </button>
             </div>
 
           </div>

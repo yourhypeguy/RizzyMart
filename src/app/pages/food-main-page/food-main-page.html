@@ -12,7 +12,10 @@
             <div class="top-section">
 
                <div class="featured-product">
-                 <div class="product-placeholder"></div>
+                 <app-food-items
+                    *ngIf="products.length > 0"
+                    [product]="products[0]">
+                 </app-food-items>
                </div>
 
 
@@ -28,9 +31,10 @@
             </div>
 
             <div class="product-grid">
-                <div class="product-placeholder"
-                    *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]">
-                </div>
+                <app-food-items
+                    *ngFor="let product of products.slice(1)"
+                    [product]="product">
+                </app-food-items>
             </div>
 
     </div>

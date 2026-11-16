@@ -1,4 +1,4 @@
-<div class="food-item-con">
+<div class="food-item-con" (click)="openProduct()">
     <div>
        <div class="image-container">
 
@@ -15,7 +15,9 @@
                 <p>₦{{ product.price | number:'1.0-0' }}</p>
             </div>
 
-            <button class="ATR-btn" (click)="addToCart()">Add to Cart <span style="font-weight: bolder;"> +</span></button>
+            <button class="ATR-btn" (click)="$event.stopPropagation(); addToCart()">
+                Add to Cart <span style="font-weight: bolder;"> +</span>
+            </button>
           
         </div>
 

@@ -1,25 +1,50 @@
-import {
-  Component,
-  signal,
-  OnInit,
-  OnDestroy,
-} from '@angular/core';
-
+import { Component, signal, OnInit, OnDestroy, } from '@angular/core';
 import { CommonModule, Location } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
+import { Product } from '../../services/product';
+import { Product as ProductModel } from '../../models/product';
+import { Cart } from '../../services/cart';
 
 @Component({
   selector: 'app-product-page',
   imports: [CommonModule],
   templateUrl: './product-page.html',
-  styleUrl: './product-page.css',
-})
+  styleUrl: './product-page.css',})
 export class ProductPage implements OnInit, OnDestroy {
 
-  constructor(private location: Location) {}
+ constructor(
+  private location: Location,
+  private route: ActivatedRoute,
+  private productService: Product,
+  private cartService: Cart
+) {}
+
+ product: ProductModel | null = null;
+ quantity: number = 1;
 
   goBack() {
     this.location.back();
   }
+
+  increaseQuantity() {
+    this.quantity++;
+  }
+
+decreaseQuantity() {
+  if (this.quantity > 1) {
+    this.quantity--;
+  }
+}
+
+addToCart(): void {
+  if (!this.product) {
+    return;
+  }
+
+  for (let i = 0; i < this.quantity; i++) {
+    this.cartService.addToCart(this.product);
+  }
+}
 
   images = [
     './assets/25kg_kingsOil.png',
@@ -33,8 +58,24 @@ export class ProductPage implements OnInit, OnDestroy {
   intervalId: any;
 
   ngOnInit(): void {
-    this.startAutoSlide();
-  }
+  this.startAutoSlide();
+
+  this.route.paramMap.subscribe(params => {
+    const id = params.get('id');
+
+    if (id) {
+      this.productService.getProductById(id).subscribe({
+        next: (product) => {
+          this.product = product;
+          console.log('Selected product:', product);
+        },
+        error: (error) => {
+          console.error('Failed to fetch product:', error);
+        }
+      });
+    }
+  });
+}
 
   startAutoSlide() {
 
